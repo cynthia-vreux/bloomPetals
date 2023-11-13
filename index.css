@@ -1,0 +1,175 @@
+/* Styles pour les éléments avec la classe "container" */
+.container {
+    display: flex; /* Affiche les éléments en mode flexbox */
+    justify-content: space-between; /* Répartit l'espace entre les éléments enfants */
+    align-items: center;
+}
+
+/* Styles pour les éléments "ul" (listes non ordonnées) */
+ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    font-family: 'Lora', serif; /* Utilise la police Lora pour le texte de la liste */
+}
+
+/* Styles pour les liens "a" */
+a {
+    padding: 8px; /* Ajoute un espace autour des liens */
+    margin: 4px; /* Ajoute une marge autour des liens */
+    font-size: 20px; /* Définit la taille de la police */
+    text-decoration: none; /* Supprime la décoration par défaut des liens */
+    color:#000000;  
+}
+
+li a:hover {
+    color: #bdbdbd;
+}
+
+/* Styles pour l'en-tête "header" */
+header {
+    background-color: #7D5EBF;
+    padding: 24px; 
+}
+
+/* Styles pour la section principale "main" */
+main {
+    margin: 0 10vw; /* Ajoute un espace de remplissage autour du contenu principal */
+    
+}
+
+.style {
+    padding: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%239f48d9' fill-opacity='0.30' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    margin: 0 -10vw;
+}
+
+/* Styles pour les images avec la classe "image" */
+.image {
+    width: 200px; /* Ajuste la largeur de l'image à 100% du conteneur */
+    height: 145px; /* Ajuste la hauteur de l'image à 100% du conteneur */
+    object-fit: cover; /* Ajuste la taille de l'image tout en préservant les proportions et en coupant l'excédent si nécessaire */
+    margin: 1vw;
+}
+
+/* Styles pour les conteneurs d'images avec la classe "image-container" */
+.image-container {
+    display: flex; /* Affiche les images en mode flexbox */
+    justify-content: space-around; /* Centre horizontalement les images */
+    align-items: center; /* Centre verticalement les images */
+}
+
+/* Styles pour les titres "h1" */
+h1 {
+    font-family: 'Dancing Script', cursive; /* Utilise la police Dancing Script */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 100px; /* Définit la taille de la police */
+    color:
+}
+
+/* Styles pour les éléments avec la classe "center-justify" */
+.center-justify {
+    display: flex; /* Affiche les éléments en mode flexbox */
+    flex-direction: column; /* Définit la direction de la colonne */
+    box-align: center; /* Centre horizontalement les éléments */
+    text-align: center; /* Justifie le texte au centre */
+    justify-content: space-between; /* Répartit l'espace entre les éléments enfants */
+}
+
+/* Styles pour les éléments avec la classe "cust" */
+.cust {
+    font-size: 20px; /* Définit la taille de la police */
+    text-align: center; /* Centre le texte horizontalement */
+    font-family: 'Lora', serif; /* Utilise la police Lora pour le texte */
+    margin-inline-start: 10vw;
+    margin-inline-end: 10vw;
+}
+
+/* Styles pour les titres "h1" à l'intérieur de la classe "center-justify" */
+.center-justify h1 {
+    text-align: center; /* Centre le titre horizontalement */
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+}
+
+.article-content {
+    text-align: justify;
+}
+.article-container>*{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: linear-gradient(to top left, #ffffff 40%, #f2e038 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article1 {
+    flex: 1;
+    order: 1; /* Article 1 reste à gauche (ordre 1) */
+}
+
+.article2 {
+    flex: 1;
+    order: 2; /* Article 2 va à droite de l'article précédent (ordre 2) */
+}
+
+.article3 {
+    flex: 1;
+    order: 3; /* Article 3 va à droite de l'article précédent (ordre 3) */
+}
+
+.readmore{
+    color: #7D5EBF;
+    text-decoration: underline;
+}
+
+/* Styles pour le pied de page "footer" */
+footer {
+    background-color: #7D5EBF;
+    padding: 2vw 15vw;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer p {
+    margin: 0 16px;
+}
+
+
+/* Style de la barre de recherche */
+form {
+    position: relative; /* Position relative pour positionner le bouton à l'intérieur */
+    right: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Bords arrondis */
+    width: 250px; /* Ajustez la largeur selon vos besoins */
+    height: 20px;
+}
+
+/* Style du bouton loupe intégré à la barre de recherche */
+button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 4px;
+    border: none;
+    border-radius: 50%; /* Bords arrondis pour le bouton */
+    background-color: #000000; /* Couleur du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    cursor: pointer;
+}
+
