@@ -141,7 +141,7 @@ option {
 
 .contact-container::after {
     right: 10px;
-    clip-path: polygon(40% 0%, 100% 0%, 100% 70%,  80% 170%)
+    clip-path: polygon(40% 0%, 100% 0%, 100% 40%,  80% 170%)
 }
 
 footer {
